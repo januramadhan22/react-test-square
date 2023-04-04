@@ -1,5 +1,11 @@
+import Sidebar from "../components/Sidebar";
+
 function App() {
-  return <div className="text-pri">Hello</div>;
+  return (
+    <div className="w-full min-h-screen">
+      <Sidebar />
+    </div>
+  );
 }
 
 export default App;
