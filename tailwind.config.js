@@ -4,6 +4,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        iris: { 60: "#A5A6F6", 75: "#7879F1" },
         primary: {
           black: "#110D17",
           grey: "#6D6D6D",
