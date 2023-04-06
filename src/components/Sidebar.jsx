@@ -25,7 +25,7 @@ function Sidebar() {
   const integration = ["Stock", "Supply"];
 
   return (
-    <section className="w-20 lg:w-[200px] h-full p-6 border-r flex flex-col justify-between bg-white group hover:w-[200px] transition-all ease-out duration-200">
+    <section className="w-20 lg:w-[200px] min-h-screen p-6 border-r flex flex-col justify-between bg-white group hover:w-[200px] transition-all ease-out duration-200">
       {/* Top Content */}
       <div className="space-y-6">
         {/* Logo */}
