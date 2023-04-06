@@ -209,8 +209,156 @@ const datas = [
     favorite: "Chicken & Ribs Combo",
     transaction: 194700,
   },
+  {
+    id: 31,
+    name: "Odis Rhinehart",
+    level: "Warga",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 32,
+    name: "Kris Roher",
+    level: "Warga",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 33,
+    name: "Serenity Fisher",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 34,
+    name: "Brooklyn Warren",
+    level: "Sultan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 35,
+    name: "Franco Delort",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 36,
+    name: "Saul Geoghegan",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 37,
+    name: "Alfredo Vetrovs",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 38,
+    name: "Cristofer Vetrovs",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 39,
+    name: "Calvin Steward",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 40,
+    name: "Calvin Steward",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 41,
+    name: "Odis Rhinehart",
+    level: "Warga",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 42,
+    name: "Kris Roher",
+    level: "Warga",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 43,
+    name: "Serenity Fisher",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 44,
+    name: "Brooklyn Warren",
+    level: "Sultan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 45,
+    name: "Franco Delort",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 46,
+    name: "Saul Geoghegan",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 47,
+    name: "Alfredo Vetrovs",
+    level: "Juragan",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 48,
+    name: "Cristofer Vetrovs",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 49,
+    name: "Calvin Steward",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
+  {
+    id: 50,
+    name: "Calvin Steward",
+    level: "Konglomerat",
+    favorite: "Chicken & Ribs Combo",
+    transaction: 194700,
+  },
 ];
 
-export const getDataCustomers = () => {
-  return datas;
+export const getDataCustomers = (page, limit) => {
+  let array = [];
+  for (let i = (page - 1) * limit; i < page * limit; i++) {
+    array.push(datas[i]);
+  }
+  return array;
+};
+
+export const getLength = () => {
+  return datas.length;
 };

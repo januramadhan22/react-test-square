@@ -4,9 +4,7 @@ import { CiSearch, CiEdit } from "react-icons/ci";
 import { FiShield } from "react-icons/fi";
 import { HiOutlineTrash } from "react-icons/hi";
 
-import { getDataCustomers } from "../../../utils/customerDatas";
-
-function Table() {
+function Table({ customers }) {
   const tableHead = [
     "Customer Name",
     "Level",
@@ -15,81 +13,8 @@ function Table() {
     "Action",
   ];
 
-  const datas = [
-    {
-      id: 1,
-      name: "Odis Rhinehart",
-      level: "Warga",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 2,
-      name: "Kris Roher",
-      level: "Warga",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 3,
-      name: "Serenity Fisher",
-      level: "Juragan",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 4,
-      name: "Brooklyn Warren",
-      level: "Sultan",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 5,
-      name: "Franco Delort",
-      level: "Juragan",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 6,
-      name: "Saul Geoghegan",
-      level: "Juragan",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 7,
-      name: "Alfredo Vetrovs",
-      level: "Juragan",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 8,
-      name: "Cristofer Vetrovs",
-      level: "Konglomerat",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 9,
-      name: "Calvin Steward",
-      level: "Konglomerat",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-    {
-      id: 10,
-      name: "Calvin Steward",
-      level: "Konglomerat",
-      favorite: "Chicken & Ribs Combo",
-      transaction: 194700,
-    },
-  ];
-
   return (
-    <table class="w-full table-fixed border-collapse m-0">
+    <table className="w-full table-fixed border-collapse m-0">
       <thead className="w-full bg-soft-grey text-secondary-grey mb-3">
         <tr>
           {tableHead?.map((list, index) => (
@@ -106,7 +31,7 @@ function Table() {
         </tr>
       </thead>
       <tbody className="mt-3">
-        {datas?.map((data) => (
+        {customers?.map((data) => (
           <tr
             key={data.id}
             className="text-sm font-semibold leading-[21px] tracking-tighter text-primary-black"

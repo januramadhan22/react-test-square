@@ -28,7 +28,7 @@ function Banner() {
         <button className="min-w-fit w-[186px] h-[45px] py-2 px-4 rounded-lg flex items-center justify-center gap-3 text-sm font-semibold leading-[21px] tracking-tighter text-white bg-white bg-opacity-20">
           <HiOutlinePlus /> Add New Customer
         </button>
-        <di className="w-fit max-h-[45px] py-2 pl-4 pr-2 rounded-lg flex items-center justify-center gap-4 bg-white ">
+        <div className="w-fit max-h-[45px] py-2 pl-4 pr-2 rounded-lg flex items-center justify-center gap-4 bg-white ">
           <CiSearch className="text-base text-secondary-grey" />
           <input
             type="text"
@@ -38,7 +38,7 @@ function Banner() {
           <button className="w-fit max-h-[37px] py-2 px-4 rounded-lg text-sm font-semibold leading-[21px] tracking-tighter bg-primary-blue text-white">
             Search
           </button>
-        </di>
+        </div>
         <button className="relative min-w-fit w-[94px] h-[45px] py-2 px-4 rounded-lg flex items-center justify-center gap-3 text-sm font-semibold leading-[21px] tracking-tighter text-white bg-white bg-opacity-20 overflow-clip">
           <div className="w-full h-full  bg-white bg-opacity-20 absolute top-0 left-0 rounded-lg blur-sm" />
           <HiOutlineFilter className="text-base" />
